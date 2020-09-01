@@ -9,17 +9,23 @@ class Intro extends Component {
   };
 
   handleClickQuick =() =>{
-          this.setState({
-            show1: !this.state.show1,
-            show2:this.state.show2=false,
+          this.setState((prevState)=>{
+            return{
+              show1: !prevState.show1,
+              show2: prevState.show2=false,
+
+            }
         });        
   }
   handleClickClassic =() =>{
-          this.setState({
-              show2: !this.state.show2,
-              show1:this.state.show1=false,
+          this.setState((prevState)=>{
+            return{
+              show2: !prevState.show2,
+              show1:prevState.show1=false,
+            }
         });        
   }
+
 
   render() {
     return (
@@ -51,7 +57,7 @@ class Intro extends Component {
         </div>
        </ToggleDisplay>
        <ToggleDisplay show={this.state.show2}>
-        <div class="classic-rules" id="classicRules">
+        <div className="classic-rules" id="classicRules">
           <h2>Classic Play Game</h2>
           <ol>
             <li>Each Player picks an Army Color.</li>

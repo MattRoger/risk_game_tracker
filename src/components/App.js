@@ -11,8 +11,9 @@ class App extends Component {
     hideRules: true,
     hideAddPlayer: true,
     players: [],
+    playerTurn:1,
   };
-
+  
   hideRules = () => {
     this.setState({
       hideRules: !this.state.hideRules,
@@ -34,74 +35,108 @@ class App extends Component {
 
   prevPlayerId = this.state.players.length;
 
-  handleAddPlayer = (name) => {
+  handleAddPlayer = (name, score, color) => {
     this.setState((prevState) => {
       return {
         players: [
           ...prevState.players,
           {
             name: name,
-            score: 0,
+            score: parseInt(score),
             id: (this.prevPlayerId += 1),
+            color:color,
+            isTurn:false,
           },
         ],
       };
     });
   };
-  handleLoadPlayer = () => {
-    if (this.state.players.length >= 1) {
-      this.state.players.map((player, index) => (
-        <Player
-          name={player.name}
-          key={player.id.toString()}
-          index={index}
-          id={player.id}
-          score={player.score}
-          changeScore={this.handleScoreChange}
-          removePlayer={this.handleRemovePlayer}
-        />
-      ));
+  
+  // check to make sure at least two people are playing
+ handlePlayerAmountCheck = ()=>{
+   if(this.prevPlayerId >1){
+    this.hideAddPlayer()
+   }else{
+     alert("Please add at least 2 players")
+   }
+ }
+    
+  handleScoreChange = (index, delta) => {
+    this.setState((prevState) => {
+      return {
+        score: prevState.players[index].score+=delta,
+      };
+    });
+  } 
+handleNextTurn=()=>{
+  this.setState((prevState)=>{
+    let playTurn= prevState.playerTurn
+    const pLength =this.state.players.length;
+    console.log(pLength)
+    // 2  1
+    if(pLength >playTurn){
+      return{
+        playerTurn: playTurn+=1
+      }
+    }else{
+      return{
+        playerTurn: 1
+      }
     }
-  };
+  })
+console.log(this.state.playerTurn)
+}
+
 
   render() {
     return (
-      <>
+      <div className="app-wrapper">
         <h1>Welcome to The Risk Game Tracker</h1>
-        <ToggleDisplay show={this.state.hideRules}>
+        <ToggleDisplay show={this.state.hideRules} className="start-rules wrapper">
           <Intro />
           <button onClick={this.hideRules}> Continue! </button>
         </ToggleDisplay>
 
-        <ToggleDisplay show={this.state.hideAddPlayer}>
+        <ToggleDisplay show={this.state.hideAddPlayer} className="add-players wrapper">
           <AddPlayerForm addPlayer={this.handleAddPlayer} />
-          {this.state.players.map((player, index) => (
-            <PlayerList
-            name={player.name}
-            key={player.id.toString()}
-            index={index}
-            id={player.id}
-            score={player.score}
-            removePlayer={this.handleRemovePlayer}
-            />
+          {this.state.players.map((player, index) => ( 
+          
+              <PlayerList
+              name={player.name}
+              key={player.id.toString()}
+              index={index}
+              id={player.id}
+              score={player.score}
+              removePlayer={this.handleRemovePlayer}
+              color={player.color}
+              />
+                 
+            
             ))}
-            <button onClick={this.hideAddPlayer}> Play! </button>
+            <button onClick={this.handlePlayerAmountCheck}> Play! </button>
         </ToggleDisplay>
-        <div class="game-tracker">
+        <div className="game-tracker wrapper">
           {this.state.players.map((player, index) => (
-            <Player
+              <Player
               name={player.name}
               key={player.id.toString()}
               score={player.score}
               id={player.id}
               index={index}
               changeScore={this.handleScoreChange}
+              color={player.color}
+              isTurn={player.isTurn}
+              playerTurn={this.state.playerTurn}
             />
           ))}
+          <button
+          onClick={this.handleNextTurn}
+          >Next Turn</button>
         </div>
-      </>
+      </div>
     );
   }
 }
 
 export default App;
+

@@ -1,17 +1,27 @@
 import React from "react";
+import styled from "styled-components";
 
 const PlayerList = (props) => {
-    return (
-      <div className="player-list">
-        <span className="player-name-list">
-        <button className="remove-player"
-        onClick={()=>props.removePlayer(props.id)}
-        >✖</button>
-          {props.name}</span>
-      
-      </div>
-    );
-  };
+  const Container = styled.div`
+    background: ${props.color};
+  `;
 
-  export default PlayerList;
-  
+
+  return (
+    <Container>
+      <div className="player-list" id={props.id}>
+        <span className="player-name-list">
+          <button
+            className="remove-player"
+            onClick={() => props.removePlayer(props.id)}
+          >
+            ✖
+          </button>
+          {props.name}
+        </span>
+      </div>
+    </Container>
+  );
+};
+
+export default PlayerList;
