@@ -39,6 +39,7 @@ const PlayerList = (props) => {
   backgroundColor= `rgb(${backgroundColor})`
   const Container = styled.div`
     background: ${backgroundColor};
+    border:2px solid ${backgroundColor};
     color:${textColor};
     display:flex;
     align-content: center;

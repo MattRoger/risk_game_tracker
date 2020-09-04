@@ -67,7 +67,8 @@ form label {
 }
 
 input,
-select {
+select,
+option {
   display: block;
   margin: auto;
   width: 90%;

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ToggleDisplay from "react-toggle-display";
 import "../style/App.css";
+import "../style/dice-roll.css";
 import Header from "./Header";
 import Intro from "./Intro";
 import AddPlayerForm from "./AddPlayerForm";

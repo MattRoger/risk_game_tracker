@@ -4,6 +4,7 @@ import Counter from "./Counter";
 
 const Player = (props) => {
   let backgroundColor = "0,0,0";
+  let borderStyle = "";
   let textColor = "#000";
   const lightText = "#F2F4F3";
   const darkText = "#403D39";
@@ -40,23 +41,25 @@ const Player = (props) => {
 
   if (props.playerTurn == props.id) {
     backgroundColor = `rgb(${backgroundColor})`;
+    borderStyle=` 5px solid ${"gold"}`   
   } else {
-    backgroundColor = `rgb(${backgroundColor},.5)`;
+    backgroundColor = `rgb(${backgroundColor},.3)`;
+    borderStyle=` 2px solid ${backgroundColor}`
   }
   const Container = styled.div`
+  border:${borderStyle};
     background: ${backgroundColor};
     display: flex;
     justify-content: space-between;
     align-content: center;
-    margin-top:1rem;
-    align-items:center;
-    margin-bottom:1rem;
+    margin-top: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
     color: ${textColor};
     button {
       display: inline;
-      margin:.5rem
+      margin: 0.5rem;
     }
-   
   `;
 
   return (

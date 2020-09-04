@@ -1,6 +1,6 @@
 import React from "react";
 import Result from "./Result";
-import Results from "./Result";
+
 
 const AttackResults = (props) => {
   const battleResults = props.handleBattle();
@@ -14,18 +14,21 @@ const AttackResults = (props) => {
   console.log(attackResults);
   console.log(defenseResults);
   return (
-    <>
-      <div>
+    <div className="dice-container">
+      <div className="attack-roll">          
         {attackResults.map((result) =>(
-            <Result class={Results.class}  img={result.img} />            
+            <Result class={result.class}  img={result.img} />            
         ))}
+        </div>
+            
+        <div className="defense-roll">
         {defenseResults.map((result) =>(
-            <Result class={Results.class}  img={result.img} />            
+            <Result class={result.class}  img={result.img} />            
         ))}
 
            
       </div>
-    </>
+    </div>
   );
 };
 

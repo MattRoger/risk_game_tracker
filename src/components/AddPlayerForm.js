@@ -21,14 +21,18 @@ class AddPlayerForm extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.addPlayer(
-      this.state.nameValue,
-      this.state.territoryValue,
-      this.state.color
-    );
-    this.setState({
-      nameValue: "",
-    });
+    if(this.state.nameValue==""){
+      alert("Please Enter A Name")
+    }else{
+      this.props.addPlayer(
+        this.state.nameValue,
+        this.state.territoryValue,
+        this.state.color
+      );
+      this.setState({
+        nameValue: "",
+      });
+    }
   };
   render() {
     return (

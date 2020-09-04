@@ -25,7 +25,7 @@ class StarBonus extends Component {
     <table className="card-troops">
       <thead></thead>
       <tbody>
-        <tr class="troop-head">
+        <tr className="troop-head">
         <th><img src="/images/icons/star.png" className="table-image2"/></th>
           <th><img src="/images/example/troop.png" className="table-image"/></th>
           <th><img src="/images/icons/star.png" className="table-image2"/></th>

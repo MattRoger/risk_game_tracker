@@ -1,0 +1,44 @@
+.attack-roll,
+.defense-roll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.attack-roll img {
+  width: 75px;
+}
+
+.defense-roll img {
+  width: 75px;
+}
+
+.round-result {
+  padding: 1rem;
+}
+
+.winner {
+  background: gold;
+}
+
+.loser {
+  background: gray;
+}
+
+.loser,
+.winner {
+  padding: .75rem;
+  border-radius: 15%;
+}
+
+@media only screen and (min-width: 1250px) {
+  .attack-roll img {
+    width: 65px;
+  }
+  .defense-roll img {
+    width: 65px;
+  }
+}
+/*# sourceMappingURL=dice-roll.css.map */

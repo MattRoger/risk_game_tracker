@@ -85,7 +85,7 @@ class BattleRules extends Component {
             </ol>
             </ToggleDisplay> 
           </div>
-          <div class="example-wrapper">
+          <div className="example-wrapper">
             <div className="example-container">
               <h3>Example 1</h3>
               <img src="/images/example/ex1.png" />

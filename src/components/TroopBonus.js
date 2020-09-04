@@ -24,7 +24,7 @@ class TroopBonus extends Component {
           <ToggleDisplay show={this.state.show}>
     <table>
       <thead></thead>
-      <tbody>
+      <tbody className="troop-bonus-table">
         <tr>
           <td>12-14</td>
           <td>15-17</td>

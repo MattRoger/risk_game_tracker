@@ -84,6 +84,10 @@ td {
   border-bottom: 2px dotted #f2f4f3;
 }
 
+.troop-bonus-table td {
+  border-right: 2px solid #f2f4f3;
+}
+
 .header {
   text-align: center;
   color: #333e42;

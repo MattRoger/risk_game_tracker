@@ -79,12 +79,16 @@ table {
 th {
   font-size: 1.5rem;
   padding: 0.75rem;
-  border-bottom: 4px dashed $light-text;
+  border-bottom: 4px dashed $white;
 }
 td {
   font-size: 1.25rem;
   padding: 0.25rem;
-  border-bottom: 2px dotted $light-text;
+  border-bottom: 2px dotted $white;
+}
+.troop-bonus-table td{
+  border-right:2px solid $white;
+
 }
 .header {
   text-align: center;
@@ -262,68 +266,5 @@ height:55px
   .example-container img{
     width: 125px;
   }
-//   .example-container{
-//     border:2px solid $light-text;
-//     width: 150px;
-//     padding:1rem;
-//     box-sizing: border-box;
-//   }
-//   .example-wrapper{
-//     display: flex;
-//     flex-wrap:wrap;
-//     justify-content: center;
-//   }
-//   .chart-btn{
-//     font-size: 1.5rem;
-//     color:$dark-text;
-//     padding: .75rem;
-//     background:$light-text;
-//     width: 100%;
-//     margin-bottom:1rem;
-//     font-family:$heading-font
-//     }
-//     .chart-btn:hover{
-//       background:#918450;
-//     }
-
-//     .card-troops td{
-//       border-bottom: none;
-//     }
-//     .table-image{
-//       width: 10px;
-//     }
-//     .table-image2{
-//       width: 30px;
-//     }
-//     .troop-col{
-//       background:$prussian-blue;
-//     }
-//     .star-col{
-//       background:$light-text;
-//       color:$prussian-blue;
-//       width:30px;
-//     }
-//     .troop-head th{
-//       width:30px;      
-//     }
-
-//     .piece-wrapper{
-// display: flex;
-//     }
-//     .piece-wrapper h4{
-// font-size:4rem;
-// padding:.5rem;
-//     }
-//     .troop-img{
-// height:55px     
-//     }
-//     .calvary-img{
-//       height:55px  
-     
-//     }
-//     .cannon-img{
-//       height:55px  
-    
-//     }
 }
 

@@ -6,7 +6,6 @@ class VirtualDiceRoll extends Component {
   state = {
     attackDice: 0,
     defenseDice: 0,
-
   };
 
   handleToggleChart = () => {
@@ -25,16 +24,6 @@ class VirtualDiceRoll extends Component {
    defense=e.target.value
    return defense
   };
-  // handleAttackDice = (e) => {
-  //   this.setState({
-  //     attackDice: e.target.value,
-  //   });
-  // };
-  // handleDefenseDice = (e) => {
-  //   this.setState({
-  //     defenseDice: e.target.value,
-  //   });
-  // };
 
   handleSubmit = (e) => {
     e.preventDefault();
@@ -58,12 +47,14 @@ class VirtualDiceRoll extends Component {
             <form className="virtual-dice-form" onSubmit={this.handleSubmit}>
               <label>Attack Dice</label>
               <select  onChange={this.handleAttackDice}>
+                <option value={0}>Select Attack Dice</option>
                 <option value={1}>1</option>
                 <option value={2}>2</option>
                 <option value={3}>3</option>
               </select>
               <label>Defense Dice</label>
               <select  onChange={this.handleDefenseDice}>
+              <option value={0}>Select Defense Dice</option>
                 <option value={1}>1</option>
                 <option value={2}>2</option>
               </select>

@@ -23,13 +23,13 @@ class PieceGuide extends Component {
           </button>
           <ToggleDisplay show={this.state.show}>
           <div className="piece-guide">
-            <div class="piece-wrapper">
+            <div className="piece-wrapper">
             <h4>1</h4><img src="/images/example/troop.png" className="troop-img"/><h4>= 1 Troop</h4>
             </div>
-            <div class="piece-wrapper">
+            <div className="piece-wrapper">
             <h4>5</h4><img src="/images/example/troop.png" className="troop-img"/><h4>= 1</h4><img src="/images/example/calvary.png" className="calvary-img"/>
             </div>
-            <div class="piece-wrapper">
+            <div className="piece-wrapper">
             <h4>2</h4><img src="/images/example/calvary.png" className="calvary-img"/><h4>= 1</h4><img src="/images/example/cannon.png" className="cannon-img"/>
             </div>
 

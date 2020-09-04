@@ -25,27 +25,28 @@ const VirtualDiceRollResults = (props) => {
 
   const handleDiceFace = (value, v) => {
     let img = "";
+    const src="/images/dice/"
     switch (value) {
       case 1:
-        img = `${v}1`;
+        img = `${src}${v}1.png`;
         break;
       case 2:
-        img = `${v}2`;
+        img = `${src}${v}2.png`;
         break;
       case 3:
-        img = `${v}3`;
+        img = `${src}${v}3.png`;
         break;
       case 4:
-        img = `${v}4`;
+        img = `${src}${v}4.png`;
         break;
       case 5:
-        img = `${v}5`;
+        img = `${src}${v}5.png`;
         break;
       case 6:
-        img = `${v}6`;
+        img = `${src}${v}6.png`;
         break;
       default:
-        img = `${v}1`;
+        img = `error`;
     }
     return img;
   };
@@ -70,7 +71,7 @@ const VirtualDiceRollResults = (props) => {
         console.log("loser");
         d[0].class = "winner";
       }
-      if(a[1] && d[1] > 0){
+      if(a[1] && d[1]){
           if (a[1].value > d[1].value) {
             console.log("winner");
             a[1].class = "winner";
@@ -116,10 +117,6 @@ const handleBattle = () => {
         return battleArray
     }
   };
-//   handleBattle();
-
-  //   console.log(defenseArray);
-  //   console.log(attackArray);
 
   return (
     <>

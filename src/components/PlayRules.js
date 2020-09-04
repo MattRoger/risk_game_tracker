@@ -25,8 +25,8 @@ class PlayRules extends Component {
         <li>
           Place Troops
             <dd>Each turn the players gets always gets 3 starting troops</dd>
-            <dd>Players may turn in any territory cards for troop bonus. See table below.</dd>
-            <dd>Players get a troop bonus for territories held. See table below</dd>
+            <dd>Players may turn in any territory cards for troop bonus. See "Territory Cards for Troops" .</dd>
+            <dd>Players get a troop bonus for territories held. See "Troops for Territories"</dd>
             <dd>Players place troops on territories they occupy.</dd>
           </li>
           <li>
