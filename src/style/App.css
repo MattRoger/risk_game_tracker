@@ -1,0 +1,128 @@
+.intro-btn {
+  padding: .5rem 1rem;
+  border: 2px solid #333e42;
+}
+
+.intro-btn:hover {
+  background: #918450;
+}
+
+.app-wrapper {
+  width: 100%;
+}
+
+.start-rules,
+.add-players,
+.game-tracker {
+  margin: auto;
+  width: 90%;
+  height: 80%;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.red {
+  background-color: #de0d0d;
+  color: #f2f4f3;
+}
+
+.blue {
+  background-color: #3816cc;
+  color: #f2f4f3;
+}
+
+.green {
+  background-color: #16a637;
+  color: #f2f4f3;
+}
+
+.yellow {
+  background-color: #dedb21;
+  color: #333e42;
+}
+
+.grey {
+  background-color: #7a7a7a;
+  color: #f2f4f3;
+}
+
+.black {
+  background-color: #333e42;
+  color: #f2f4f3;
+}
+
+form P,
+label {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  margin: auto;
+  font-size: 1.75rem;
+}
+
+input,
+select {
+  display: block;
+  margin: auto;
+  width: 90%;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+select {
+  margin: auto;
+  width: 95%;
+}
+
+input[type="submit"] {
+  margin-top: 1rem;
+  width: 95%;
+}
+
+.player-list-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.counter-score,
+.player-name {
+  font-size: 2rem;
+  font-family: "Girassol", cursive;
+}
+
+.player-name {
+  margin-left: 0.5rem;
+  display: inline;
+}
+
+.counter-btn {
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (min-width: 1250px) {
+  .app-wrapper {
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+    padding-top: 0;
+  }
+  .start-rules,
+  .add-players,
+  .game-tracker {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=App.css.map */

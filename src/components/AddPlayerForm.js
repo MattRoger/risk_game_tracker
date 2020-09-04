@@ -29,12 +29,18 @@ class AddPlayerForm extends Component {
     this.setState({
       nameValue: "",
     });
-    
   };
-
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} className="wrapper">
+        <p>
+          Add the player who rolled the highest dice first, then add each player
+          in a clockwise circle
+        </p>
+        <p>
+          For each player, enter a name, the amount of starting territories
+          controlled, and select a color.
+        </p>
         <label>Enter Player Name</label>
         <input
           type="text"
@@ -49,14 +55,16 @@ class AddPlayerForm extends Component {
           onChange={this.handleTerritoryValueChange}
           placeholder="Total Territories"
         />
-
+        <label>Select Color</label>
         <select name="color" onChange={this.handleColor}>
           {colors.map((color) => (
-            <option value={color} key={color}>{color}</option>
+            <option value={color} key={color} className={color}>
+              {color.toUpperCase()}
+            </option>
           ))}
         </select>
 
-        <input type="submit" value="add player" />
+        <input type="submit" value="Add Player" className="wrapper" />
       </form>
     );
   }

@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Girassol&family=Roboto+Slab:wght@500&display=swap");
+
+$heading-font: "Girassol", cursive;
+$text-font: "Roboto Slab", serif;
+$white:#f2f4f3;
+$black:#403d39;
+$red: rgb(222, 13, 13);
+$blue: rgb(56, 22, 204);
+$green: rgb(22, 166, 55);
+$yellow: rgb(222, 219, 33);
+$grey: rgb(122, 122, 122);
+$black: rgb(51, 62, 66);
+$prussian-blue:rgb(37, 55, 78);
+$light-text: $white;
+$dark-text: $black;
+
+h1,
+h2,
+h3,
+h4,
+th {
+  font-family: $heading-font;
+}
+
+p,
+li,
+td {
+  font-family: $text-font;
+}
+button {
+  display: flex;
+  align-items: center;
+}
+button p {
+  font-size: 1.5rem;
+  font-family: $heading-font;
+}
+button img {
+  height: 45px;
+}
+.page-wrapper {
+  overflow: auto;
+  background-image: url("./backgrounds/mobileBG.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  background: rgba(37, 55, 78, 0.8);
+  color: $light-text;
+  padding: 0.5rem;
+}
+
+//   header
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+  color: $light-text;
+  text-align: center;
+}
+h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+table {
+  text-align: center;
+  margin: auto;
+}
+th {
+  font-size: 1.5rem;
+  padding: 0.75rem;
+  border-bottom: 4px dashed $light-text;
+}
+td {
+  font-size: 1.25rem;
+  padding: 0.25rem;
+  border-bottom: 2px dotted $light-text;
+}
+.header {
+  text-align: center;
+  color: $dark-text;
+}
+.risk-logo {
+  width: 150px;
+  display: block;
+  margin: auto;
+}
+//   start rules
+
+.button-bar {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+
+
+ol { 
+  width: 90%;
+  list-style-type: upper-roman;
+  list-style-position: inside;
+  margin: auto;
+}
+li {
+  padding: 0.25rem;
+  font-size: 1.25rem;
+}
+ol::before {
+  color:$red;
+}
+
+.right-side,
+.left-side{
+  width:90%;
+  margin: auto;
+}
+
+.section-btn {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.section-btn p {
+  font-size: 3rem;
+}
+.example-container img{
+  width: 75px;
+}
+
+
+.example-container img{
+  width: 125px;
+}
+.example-container{
+  border:2px solid $light-text;
+  width: 150px;
+  padding:1rem;
+  box-sizing: border-box;
+}
+.example-wrapper{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+.chart-btn{
+  font-size: 1.5rem;
+  color:$dark-text;
+  padding: .75rem;
+  background:$light-text;
+  width: 100%;
+  margin-bottom:1rem;
+  font-family:$heading-font
+  }
+  .chart-btn:hover{
+    background:#918450;
+  }
+
+  .card-troops td{
+    border-bottom: none;
+  }
+  .table-image{
+    width: 10px;
+  }
+  .table-image2{
+    width: 30px;
+  }
+  .troop-col{
+    background:$prussian-blue;
+  }
+  .star-col{
+    background:$light-text;
+    color:$prussian-blue;
+    width:30px;
+  }
+  .troop-head th{
+    width:30px;      
+  }
+
+  .piece-wrapper{
+display: flex;
+  }
+  .piece-wrapper h4{
+font-size:4rem;
+padding:.5rem;
+  }
+  .troop-img{
+height:55px     
+  }
+  .calvary-img{
+    height:55px  
+   
+  }
+  .cannon-img{
+    height:55px  
+  
+  }
+
+
+@media only screen and (min-width: 1250px) {
+  .page-wrapper {
+    background-image: url("./backgrounds/fullBg.jpg");
+    background-color: #25374e;
+    display: grid;
+    grid-template-rows: 15% 1fr;
+    grid-template-columns:1fr 2fr 1fr;
+    overflow:auto
+  }
+  .header{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    margin: auto;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .app-wrapper {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start:2;
+    grid-column-end: 3;
+  }
+
+  .left-side {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 90vh;
+  }
+  .right-side {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    height: 90vh;
+    
+  }
+
+  .risk-logo {
+    width: 250px;
+    display: initial;
+  }
+  .center-wrapper{
+    margin:0;
+    padding:0;
+  }
+  h1 {
+    font-size: 6rem;
+    width: 100%;
+  }
+  .example-container img{
+    width: 125px;
+  }
+//   .example-container{
+//     border:2px solid $light-text;
+//     width: 150px;
+//     padding:1rem;
+//     box-sizing: border-box;
+//   }
+//   .example-wrapper{
+//     display: flex;
+//     flex-wrap:wrap;
+//     justify-content: center;
+//   }
+//   .chart-btn{
+//     font-size: 1.5rem;
+//     color:$dark-text;
+//     padding: .75rem;
+//     background:$light-text;
+//     width: 100%;
+//     margin-bottom:1rem;
+//     font-family:$heading-font
+//     }
+//     .chart-btn:hover{
+//       background:#918450;
+//     }
+
+//     .card-troops td{
+//       border-bottom: none;
+//     }
+//     .table-image{
+//       width: 10px;
+//     }
+//     .table-image2{
+//       width: 30px;
+//     }
+//     .troop-col{
+//       background:$prussian-blue;
+//     }
+//     .star-col{
+//       background:$light-text;
+//       color:$prussian-blue;
+//       width:30px;
+//     }
+//     .troop-head th{
+//       width:30px;      
+//     }
+
+//     .piece-wrapper{
+// display: flex;
+//     }
+//     .piece-wrapper h4{
+// font-size:4rem;
+// padding:.5rem;
+//     }
+//     .troop-img{
+// height:55px     
+//     }
+//     .calvary-img{
+//       height:55px  
+     
+//     }
+//     .cannon-img{
+//       height:55px  
+    
+//     }
+}
+

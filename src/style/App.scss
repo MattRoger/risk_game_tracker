@@ -1,0 +1,126 @@
+$heading-font: "Girassol", cursive;
+$text-font: "Roboto Slab", serif;
+$white:#f2f4f3;
+$black:#403d39;
+$red: rgb(222, 13, 13);
+$blue: rgb(56, 22, 204);
+$green: rgb(22, 166, 55);
+$yellow: rgb(222, 219, 33);
+$grey: rgb(122, 122, 122);
+$black: rgb(51, 62, 66);
+$prussian-blue:rgb(37, 55, 78);
+$light-text: $white;
+$dark-text: $black;
+
+.intro-btn{
+    padding:.5rem 1rem;
+    border:2px solid $dark-text;
+  }
+  .intro-btn:hover{
+    background:#918450;
+  }
+  .app-wrapper {
+    width: 100%;
+  }
+  .start-rules,
+  .add-players,
+  .game-tracker {
+    margin: auto;
+    width: 90%;
+    height: 80%;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom:1rem;
+  }
+
+
+// color chart for select 
+  .red {
+    background-color: $red;
+    color: $light-text;
+  }
+  .blue {
+    background-color: $blue;
+    color: $light-text;
+  }
+  .green {
+    background-color: $green;
+    color: $light-text;
+  }
+  .yellow {
+    background-color: $yellow;
+    color: $dark-text;
+  }
+  .grey {
+    background-color: $grey;
+    color: $light-text;
+  }
+  .black {
+    background-color: $black;
+    color: $light-text;
+  }
+
+  form P,
+label {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  // width: 100%;
+}
+form label {
+  display: block;
+  margin: auto;
+  font-size: 1.75rem;
+}
+input,
+select {
+  display: block;
+  margin: auto;
+  width: 90%;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+select {
+  margin: auto;
+  width: 95%;
+}
+input[type="submit"] {
+  margin-top: 1rem;
+  width: 95%;
+}
+
+.player-list-name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .counter-score,
+  .player-name {
+    font-size: 2rem;
+    font-family: $heading-font;
+  }
+  
+  .player-name {
+    margin-left: 0.5rem;
+    display: inline;
+  }
+  .counter-btn {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media only screen and (min-width: 1250px) {
+    .app-wrapper {
+        display: block;
+        margin:  0 auto;
+        width:85%; 
+        padding-top:0;   
+      }
+      .start-rules,
+      .add-players,
+      .game-tracker{
+        width: 100%;
+    }
+  }
