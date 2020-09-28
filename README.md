@@ -15,7 +15,7 @@ Complete and ready to seize new territories.
 * Choose your gamemode and set up the game.
 ![risk tour](https://github.com/MattRoger/screenshots/blob/master/riskgametracker/Risk%20Game%20Tracker_Intro.gif?raw=true)
 
-* Add each player to the app.
+* Add each player to the app and choose their color.
 ![add player](https://github.com/MattRoger/screenshots/blob/master/riskgametracker/Risk%20Game%20Tracker%20Add%20Player.gif?raw=true)
 
 * When you are finished, click play.
