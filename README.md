@@ -12,7 +12,7 @@ Risk can be a long game, and it can be easy to forget who's turn it is. It can a
 Complete and ready to seize new territories. 
 
 ## How to use?
-![risk tour]("https://drive.google.com/file/d/1g4Zs0_uToIRGrbLpiFZ1J90jEaMpORyi/view?usp=sharing")
+![risk tour](https://github.com/MattRoger/screenshots/blob/master/riskgametracker/Risk%20Game%20Tracker_Intro.gif?raw=true)
 
 * Choose your gamemode and set up the game.
 * Add each player to the app.
