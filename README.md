@@ -31,11 +31,17 @@ Complete and ready to seize new territories.
 ## Features
 * Tracks who's turn it is.
 * Tracks how many territories players controll.
-* A virtual dice roll.![dice roll](https://github.com/MattRoger/screenshots/blob/master/riskgametracker/Risk%20Game%20Tracker%20dice.gif?raw=true)
+* A virtual dice roll.
+
+![dice roll](https://github.com/MattRoger/screenshots/blob/master/riskgametracker/Risk%20Game%20Tracker%20dice.gif?raw=true)
+* Displays the game rules
+
+![rules](https://github.com/MattRoger/screenshots/blob/master/riskgametracker/riskbuttons.gif?raw=true)
+
 
 
 ## Code style
-React
+React with styled components and Scss
 
 
 ## Installation
