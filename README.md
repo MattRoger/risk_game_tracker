@@ -12,13 +12,11 @@ Risk can be a long game, and it can be easy to forget who's turn it is. It can a
 Complete and ready to seize new territories. 
 
 ## How to use?
-![risk tour](https://github.com/MattRoger/screenshots/blob/master/riskgametracker/Risk%20Game%20Tracker_Intro.gif?raw=true)
-
-* Choose your gamemode and set up the game.
+* Choose your gamemode and set up the game.![risk tour](https://github.com/MattRoger/screenshots/blob/master/riskgametracker/Risk%20Game%20Tracker_Intro.gif?raw=true)
 * Add each player to the app. ![add player](https://github.com/MattRoger/screenshots/blob/master/riskgametracker/Risk%20Game%20Tracker%20Add%20Player.gif?raw=true)
 * When you are finished, click play.
 * When it is the players turn, there name will be highlighted.
-* If an attacker seizes a territory, add one to their territory count and remove one from defenders size.
+* If an attacker seizes a territory, add one to their territory count and remove one from defenders size. ![turn guide](https://github.com/MattRoger/screenshots/blob/master/riskgametracker/turnguide.gif?raw=true)
 
 ## Tech/framework used
 * React
