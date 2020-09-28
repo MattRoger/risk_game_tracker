@@ -1,7 +1,9 @@
 # Risk Game Tracker
 A React app to keep track of your Risk game. App tracks users turn and how many territories they player has.
 
-[deployed](https://risk-game-tracker.herokuapp.com/)
+### [deployed](https://risk-game-tracker.herokuapp.com/)
+
+![risk screen shot](https://github.com/MattRoger/screenshots/blob/master/riskgametracker/risk.PNG?raw=true)
 
 ## Motivation
 Risk can be a long game, and it can be easy to forget who's turn it is. It can also be tedious to count your territories each turn. This app solves those problems. 
